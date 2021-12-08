@@ -1,0 +1,988 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-12-07 23:12+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: TH
+#: giteveryday.7:10
+#, no-wrap
+msgid "GITEVERYDAY"
+msgstr ""
+
+#. type: TH
+#: giteveryday.7:10
+#, no-wrap
+msgid "11/29/2021"
+msgstr ""
+
+#. type: TH
+#: giteveryday.7:10
+#, no-wrap
+msgid "Git 2\\&.34\\&.1"
+msgstr ""
+
+#. type: TH
+#: giteveryday.7:10
+#, no-wrap
+msgid "Git Manual"
+msgstr ""
+
+#.  -----------------------------------------------------------------
+#.  * MAIN CONTENT STARTS HERE *
+#.  -----------------------------------------------------------------
+#. type: SH
+#: giteveryday.7:30
+#, no-wrap
+msgid "NAME"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:32
+msgid "giteveryday - A useful minimum set of commands for Everyday Git"
+msgstr ""
+
+#. type: SH
+#: giteveryday.7:32
+#, no-wrap
+msgid "SYNOPSIS"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:35
+msgid "Everyday Git With 20 Commands Or So"
+msgstr ""
+
+#. type: SH
+#: giteveryday.7:35
+#, no-wrap
+msgid "DESCRIPTION"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:38
+msgid ""
+"Git users can broadly be grouped into four categories for the purposes of "
+"describing here a small set of useful command for everyday Git\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:49
+msgid ""
+"Individual Developer (Standalone)  commands are essential for anybody who "
+"makes a commit, even for somebody who works alone\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:62
+msgid ""
+"If you work with other people, you will need commands listed in the "
+"Individual Developer (Participant)  section as well\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:75
+msgid ""
+"People who play the Integrator role need to learn some more commands in "
+"addition to the above\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:87
+msgid ""
+"Repository Administration commands are for system administrators who are "
+"responsible for the care and feeding of Git repositories\\&."
+msgstr ""
+
+#. type: SH
+#: giteveryday.7:88
+#, no-wrap
+msgid "INDIVIDUAL DEVELOPER (STANDALONE)"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:91
+msgid ""
+"A standalone individual developer does not exchange patches with other "
+"people, and works alone in a single repository, using the following "
+"commands\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:102
+msgid "B<git-init>(1)  to create a new repository\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:114
+msgid "B<git-log>(1)  to see what happened\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:128
+msgid "B<git-switch>(1)  and B<git-branch>(1)  to switch branches\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:140
+msgid "B<git-add>(1)  to manage the index file\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:154
+msgid ""
+"B<git-diff>(1)  and B<git-status>(1)  to see what you are in the middle of "
+"doing\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:166
+msgid "B<git-commit>(1)  to advance the current branch\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:178
+msgid "B<git-restore>(1)  to undo changes\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:190
+msgid "B<git-merge>(1)  to merge between local branches\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:202
+msgid "B<git-rebase>(1)  to maintain topic branches\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:214
+msgid "B<git-tag>(1)  to mark a known point\\&."
+msgstr ""
+
+#. type: SS
+#: giteveryday.7:215 giteveryday.7:377 giteveryday.7:577 giteveryday.7:747
+#, no-wrap
+msgid "Examples"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:218
+msgid "Use a tarball as a starting point for a new repository\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:230
+#, no-wrap
+msgid ""
+"$ tar zxf frotz\\&.tar\\&.gz\n"
+"$ cd frotz\n"
+"$ git init\n"
+"$ git add \\&. B<(1)>\n"
+"$ git commit -m \"import of frotz source tree\\&.\"\n"
+"$ git tag v2\\&.43 B<(2)>\n"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:236
+msgid "B<1. >add everything under the current directory\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:238
+msgid "B<2. >make a lightweight, unannotated tag\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:242
+msgid "Create a topic branch and develop\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:262
+#, no-wrap
+msgid ""
+"$ git switch -c alsa-audio B<(1)>\n"
+"$ edit/compile/test\n"
+"$ git restore curses/ux_audio_oss\\&.c B<(2)>\n"
+"$ git add curses/ux_audio_alsa\\&.c B<(3)>\n"
+"$ edit/compile/test\n"
+"$ git diff HEAD B<(4)>\n"
+"$ git commit -a -s B<(5)>\n"
+"$ edit/compile/test\n"
+"$ git diff HEAD^ B<(6)>\n"
+"$ git commit -a --amend B<(7)>\n"
+"$ git switch master B<(8)>\n"
+"$ git merge alsa-audio B<(9)>\n"
+"$ git log --since=\\*(Aq3 days ago\\*(Aq B<(10)>\n"
+"$ git log v2\\&.43\\&.\\&. curses/ B<(11)>\n"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:268
+msgid "B<1. >create a new topic branch\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:271
+msgid "B<2. >revert your botched changes in B<curses/ux_audio_oss\\&.c>\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:275
+msgid ""
+"B<3. >you need to tell Git if you added a new file; removal and modification "
+"will be caught if you do B<git commit -a> later\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:277
+msgid "B<4. >to see what changes you are committing\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:279
+msgid "B<5. >commit everything, as you have tested, with your sign-off\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:281
+msgid "B<6. >look at all your changes including the previous commit\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:283
+msgid ""
+"B<7. >amend the previous commit, adding all your new changes, using your "
+"original message\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:285
+msgid "B<8. >switch to the master branch\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:287
+msgid "B<9. >merge a topic branch into your master branch\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:292
+msgid ""
+"B<10. >review commit logs; other forms to limit output can be combined and "
+"include B<-10> (to show up to 10 commits), B<--until=2005-12-10>, etc\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:298
+msgid ""
+"B<11. >view only the changes that touch what\\(cqs in B<curses/> directory, "
+"since B<v2\\&.43> tag\\&."
+msgstr ""
+
+#. type: SH
+#: giteveryday.7:300
+#, no-wrap
+msgid "INDIVIDUAL DEVELOPER (PARTICIPANT)"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:303
+msgid ""
+"A developer working as a participant in a group project needs to learn how "
+"to communicate with others, and uses these commands in addition to the ones "
+"needed by a standalone developer\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:314
+msgid "B<git-clone>(1)  from the upstream to prime your local repository\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:328
+msgid ""
+"B<git-pull>(1)  and B<git-fetch>(1)  from \"origin\" to keep up-to-date with "
+"the upstream\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:340
+msgid ""
+"B<git-push>(1)  to shared repository, if you adopt CVS style shared "
+"repository workflow\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:352
+msgid ""
+"B<git-format-patch>(1)  to prepare e-mail submission, if you adopt Linux "
+"kernel-style public forum workflow\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:364
+msgid ""
+"B<git-send-email>(1)  to send your e-mail submission without corruption by "
+"your MUA\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:376
+msgid ""
+"B<git-request-pull>(1)  to create a summary of changes for your upstream to "
+"pull\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:380
+msgid "Clone the upstream and work on it\\&. Feed changes to upstream\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:399
+#, no-wrap
+msgid ""
+"$ git clone "
+"git://git\\&.kernel\\&.org/pub/scm/\\&.\\&.\\&./torvalds/linux-2\\&.6 "
+"my2\\&.6\n"
+"$ cd my2\\&.6\n"
+"$ git switch -c mine master B<(1)>\n"
+"$ edit/compile/test; git commit -a -s B<(2)>\n"
+"$ git format-patch master B<(3)>\n"
+"$ git send-email --to=\"person E<lt>email@example\\&.comE<gt>\" 00*\\&.patch "
+"B<(4)>\n"
+"$ git switch master B<(5)>\n"
+"$ git pull B<(6)>\n"
+"$ git log -p ORIG_HEAD\\&.\\&. arch/i386 include/asm-i386 B<(7)>\n"
+"$ git ls-remote --heads "
+"http://git\\&.kernel\\&.org/\\&.\\&.\\&./jgarzik/libata-dev\\&.git B<(8)>\n"
+"$ git pull "
+"git://git\\&.kernel\\&.org/pub/\\&.\\&.\\&./jgarzik/libata-dev\\&.git ALL "
+"B<(9)>\n"
+"$ git reset --hard ORIG_HEAD B<(10)>\n"
+"$ git gc B<(11)>\n"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:407
+msgid "B<1. >checkout a new branch B<mine> from master\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:409
+msgid "B<2. >repeat as needed\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:411
+msgid "B<3. >extract patches from your branch, relative to master,"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:413
+msgid "B<4. >and email them\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:416
+msgid "B<5. >return to B<master>, ready to see what\\(cqs new"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:421
+msgid ""
+"B<6. >B<git pull> fetches from B<origin> by default and merges into the "
+"current branch\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:423
+msgid ""
+"B<7. >immediately after pulling, look at the changes done upstream since "
+"last time we checked, only in the area we are interested in\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:425
+msgid "B<8. >check the branch names in an external repository (if not known)\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:429
+msgid ""
+"B<9. >fetch from a specific branch B<ALL> from a specific repository and "
+"merge it\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:431
+msgid "B<10. >revert the pull\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:433
+msgid "B<11. >garbage collect leftover objects from reverted pull\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:437
+msgid "Push into another repository\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:454
+#, no-wrap
+msgid ""
+"satellite$ git clone mothership:frotz frotz B<(1)>\n"
+"satellite$ cd frotz\n"
+"satellite$ git config --get-regexp \\*(Aq^(remote|branch)\\e\\&.\\*(Aq "
+"B<(2)>\n"
+"remote\\&.origin\\&.url mothership:frotz\n"
+"remote\\&.origin\\&.fetch refs/heads/*:refs/remotes/origin/*\n"
+"branch\\&.master\\&.remote origin\n"
+"branch\\&.master\\&.merge refs/heads/master\n"
+"satellite$ git config remote\\&.origin\\&.push \\e\n"
+"           +refs/heads/*:refs/remotes/satellite/* B<(3)>\n"
+"satellite$ edit/compile/test/commit\n"
+"satellite$ git push origin B<(4)>\n"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:458
+#, no-wrap
+msgid ""
+"mothership$ cd frotz\n"
+"mothership$ git switch master\n"
+"mothership$ git merge satellite/master B<(5)>\n"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:464
+msgid ""
+"B<1. >mothership machine has a frotz repository under your home directory; "
+"clone from it to start a repository on the satellite machine\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:470
+msgid ""
+"B<2. >clone sets these configuration variables by default\\&. It arranges "
+"B<git pull> to fetch and store the branches of mothership machine to local "
+"B<remotes/origin/*> remote-tracking branches\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:474
+msgid ""
+"B<3. >arrange B<git push> to push all local branches to their corresponding "
+"branch of the mothership machine\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:478
+msgid ""
+"B<4. >push will stash all our work away on B<remotes/satellite/*> "
+"remote-tracking branches on the mothership machine\\&. You could use this as "
+"a back-up method\\&. Likewise, you can pretend that mothership \"fetched\" "
+"from you (useful when access is one sided)\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:480
+msgid ""
+"B<5. >on mothership machine, merge the work done on the satellite machine "
+"into the master branch\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:484
+msgid "Branch off of a specific tag\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:494
+#, no-wrap
+msgid ""
+"$ git switch -c private2\\&.6\\&.14 v2\\&.6\\&.14 B<(1)>\n"
+"$ edit/compile/test; git commit -a\n"
+"$ git checkout master\n"
+"$ git cherry-pick v2\\&.6\\&.14\\&.\\&.private2\\&.6\\&.14 B<(2)>\n"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:500
+msgid ""
+"B<1. >create a private branch based on a well known (but somewhat behind) "
+"tag\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:506
+msgid ""
+"B<2. >forward port all changes in B<private2\\&.6\\&.14> branch to B<master> "
+"branch without a formal \"merging\"\\&. Or longhand"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:508
+msgid ""
+"B<git format-patch -k -m --stdout v2\\&.6\\&.14\\&.\\&.private2\\&.6\\&.14 | "
+"git am -3 -k>"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:512
+msgid ""
+"An alternate participant submission mechanism is using the B<git "
+"request-pull> or pull-request mechanisms (e\\&.g as used on GitHub "
+"(www\\&.github\\&.com) to notify your upstream of your contribution\\&."
+msgstr ""
+
+#. type: SH
+#: giteveryday.7:512
+#, no-wrap
+msgid "INTEGRATOR"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:515
+msgid ""
+"A fairly central person acting as the integrator in a group project receives "
+"changes made by others, reviews and integrates them and publishes the result "
+"for others to use, using these commands in addition to the ones needed by "
+"participants\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:517
+msgid ""
+"This section can also be used by those who respond to B<git request-pull> or "
+"pull-request on GitHub (www\\&.github\\&.com) to integrate the work of "
+"others into their history\\&. A sub-area lieutenant for a repository will "
+"act both as a participant and as an integrator\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:528
+msgid "B<git-am>(1)  to apply patches e-mailed in from your contributors\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:540
+msgid "B<git-pull>(1)  to merge from your trusted lieutenants\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:552
+msgid ""
+"B<git-format-patch>(1)  to prepare and send suggested alternative to "
+"contributors\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:564
+msgid "B<git-revert>(1)  to undo botched commits\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:576
+msgid "B<git-push>(1)  to publish the bleeding edge\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:580
+msgid "A typical integrator\\(cqs Git day\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:608
+#, no-wrap
+msgid ""
+"$ git status B<(1)>\n"
+"$ git branch --no-merged master B<(2)>\n"
+"$ mailx B<(3)>\n"
+"& s 2 3 4 5 \\&./+to-apply\n"
+"& s 7 8 \\&./+hold-linus\n"
+"& q\n"
+"$ git switch -c topic/one master\n"
+"$ git am -3 -i -s \\&./+to-apply B<(4)>\n"
+"$ compile/test\n"
+"$ git switch -c hold/linus && git am -3 -i -s \\&./+hold-linus B<(5)>\n"
+"$ git switch topic/one && git rebase master B<(6)>\n"
+"$ git switch -C seen next B<(7)>\n"
+"$ git merge topic/one topic/two && git merge hold/linus B<(8)>\n"
+"$ git switch maint\n"
+"$ git cherry-pick master~4 B<(9)>\n"
+"$ compile/test\n"
+"$ git tag -s -m \"GIT 0\\&.99\\&.9x\" v0\\&.99\\&.9x B<(10)>\n"
+"$ git fetch ko && for branch in master maint next seen B<(11)>\n"
+"    do\n"
+"        git show-branch ko/$branch $branch B<(12)>\n"
+"    done\n"
+"$ git push --follow-tags ko B<(13)>\n"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:614
+msgid "B<1. >see what you were in the middle of doing, if anything\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:622
+msgid ""
+"B<2. >see which branches haven\\(cqt been merged into B<master> "
+"yet\\&. Likewise for any other integration branches e\\&.g\\&.  B<maint>, "
+"B<next> and B<seen>\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:624
+msgid ""
+"B<3. >read mails, save ones that are applicable, and save others that are "
+"not quite ready (other mail readers are available)\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:626
+msgid "B<4. >apply them, interactively, with your sign-offs\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:628
+msgid "B<5. >create topic branch as needed and apply, again with sign-offs\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:630
+msgid ""
+"B<6. >rebase internal topic branch that has not been merged to the master or "
+"exposed as a part of a stable branch\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:634
+msgid "B<7. >restart B<seen> every time from the next\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:636
+msgid "B<8. >and bundle topic branches still cooking\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:638
+msgid "B<9. >backport a critical fix\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:640
+msgid "B<10. >create a signed tag\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:642
+msgid ""
+"B<11. >make sure master was not accidentally rewound beyond that already "
+"pushed out\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:653
+msgid ""
+"B<12. >In the output from B<git show-branch>, B<master> should have "
+"everything B<ko/master> has, and B<next> should have everything B<ko/next> "
+"has, etc\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:655
+msgid ""
+"B<13. >push out the bleeding edge, together with new tags that point into "
+"the pushed history\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:659
+msgid ""
+"In this example, the B<ko> shorthand points at the Git maintainer\\(cqs "
+"repository at kernel\\&.org, and looks like this:"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:672
+#, no-wrap
+msgid ""
+"(in \\&.git/config)\n"
+"[remote \"ko\"]\n"
+"        url = kernel\\&.org:/pub/scm/git/git\\&.git\n"
+"        fetch = refs/heads/*:refs/remotes/ko/*\n"
+"        push = refs/heads/master\n"
+"        push = refs/heads/next\n"
+"        push = +refs/heads/seen\n"
+"        push = refs/heads/maint\n"
+msgstr ""
+
+#. type: SH
+#: giteveryday.7:677
+#, no-wrap
+msgid "REPOSITORY ADMINISTRATION"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:680
+msgid ""
+"A repository administrator uses the following tools to set up and maintain "
+"access to the repository by developers\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:691
+msgid "B<git-daemon>(1)  to allow anonymous download from repository\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:705
+msgid ""
+"B<git-shell>(1)  can be used as a I<restricted login shell> for shared "
+"central repository users\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:717
+msgid ""
+"B<git-http-backend>(1)  provides a server side implementation of "
+"Git-over-HTTP (\"Smart http\") allowing both fetch and push services\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:731
+msgid ""
+"B<gitweb>(1)  provides a web front-end to Git repositories, which can be "
+"set-up using the B<git-instaweb>(1)  script\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:734
+msgid ""
+"\\m[blue]B<update hook howto>\\m[]\\&\\s-2\\u[1]\\d\\s+2 has a good example "
+"of managing a shared central repository\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:736
+msgid ""
+"In addition there are a number of other widely deployed hosting, browsing "
+"and reviewing solutions such as:"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:746
+msgid "gitolite, gerrit code review, cgit and others\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:750
+msgid "We assume the following in /etc/services"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:758
+#, no-wrap
+msgid ""
+"$ grep 9418 /etc/services\n"
+"git             9418/tcp                # Git Version Control System\n"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:766
+msgid "Run git-daemon to serve /pub/scm from inetd\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:775
+#, no-wrap
+msgid ""
+"$ grep git /etc/inetd\\&.conf\n"
+"git     stream  tcp     nowait  nobody \\e\n"
+"  /usr/bin/git-daemon git-daemon --inetd --export-all /pub/scm\n"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:781
+msgid "The actual configuration line should be on one line\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:784
+msgid "Run git-daemon to serve /pub/scm from xinetd\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:805
+#, no-wrap
+msgid ""
+"$ cat /etc/xinetd\\&.d/git-daemon\n"
+"# default: off\n"
+"# description: The Git server offers access to Git repositories\n"
+"service git\n"
+"{\n"
+"        disable = no\n"
+"        type            = UNLISTED\n"
+"        port            = 9418\n"
+"        socket_type     = stream\n"
+"        wait            = no\n"
+"        user            = nobody\n"
+"        server          = /usr/bin/git-daemon\n"
+"        server_args     = --inetd --export-all --base-path=/pub/scm\n"
+"        log_on_failure  += USERID\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:811
+msgid ""
+"Check your xinetd(8) documentation and setup, this is from a Fedora "
+"system\\&. Others might be different\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:814
+msgid "Give push/pull only access to developers using git-over-ssh\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:817
+msgid "e\\&.g\\&. those using: B<$ git push/pull ssh://host\\&.xz/pub/scm/project>"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:829
+#, no-wrap
+msgid ""
+"$ grep git /etc/passwd B<(1)>\n"
+"alice:x:1000:1000::/home/alice:/usr/bin/git-shell\n"
+"bob:x:1001:1001::/home/bob:/usr/bin/git-shell\n"
+"cindy:x:1002:1002::/home/cindy:/usr/bin/git-shell\n"
+"david:x:1003:1003::/home/david:/usr/bin/git-shell\n"
+"$ grep git /etc/shells B<(2)>\n"
+"/usr/bin/git-shell\n"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:838
+msgid ""
+"B<1. >log-in shell is set to /usr/bin/git-shell, which does not allow "
+"anything but B<git push> and B<git pull>\\&. The users require ssh access to "
+"the machine\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:840
+msgid ""
+"B<2. >in many distributions /etc/shells needs to list what is used as the "
+"login shell\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:844
+msgid "CVS-style shared repository\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:870
+#, no-wrap
+msgid ""
+"$ grep git /etc/group B<(1)>\n"
+"git:x:9418:alice,bob,cindy,david\n"
+"$ cd /home/devo\\&.git\n"
+"$ ls -l B<(2)>\n"
+"  lrwxrwxrwx   1 david git    17 Dec  4 22:40 HEAD -E<gt> "
+"refs/heads/master\n"
+"  drwxrwsr-x   2 david git  4096 Dec  4 22:40 branches\n"
+"  -rw-rw-r--   1 david git    84 Dec  4 22:40 config\n"
+"  -rw-rw-r--   1 david git    58 Dec  4 22:40 description\n"
+"  drwxrwsr-x   2 david git  4096 Dec  4 22:40 hooks\n"
+"  -rw-rw-r--   1 david git 37504 Dec  4 22:40 index\n"
+"  drwxrwsr-x   2 david git  4096 Dec  4 22:40 info\n"
+"  drwxrwsr-x   4 david git  4096 Dec  4 22:40 objects\n"
+"  drwxrwsr-x   4 david git  4096 Nov  7 14:58 refs\n"
+"  drwxrwsr-x   2 david git  4096 Dec  4 22:40 remotes\n"
+"$ ls -l hooks/update B<(3)>\n"
+"  -r-xr-xr-x   1 david git  3536 Dec  4 22:40 update\n"
+"$ cat info/allowed-users B<(4)>\n"
+"refs/heads/master       alice\\e|cindy\n"
+"refs/heads/doc-update   bob\n"
+"refs/tags/v[0-9]*       david\n"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:876
+msgid "B<1. >place the developers into the same git group\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:878
+msgid "B<2. >and make the shared repository writable by the group\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:880
+msgid ""
+"B<3. >use update-hook example by Carl from Documentation/howto/ for branch "
+"policy control\\&."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:882
+msgid ""
+"B<4. >alice and cindy can push into master, only bob can push into "
+"doc-update\\&. david is the release manager and is the only person who can "
+"create and push version tags\\&."
+msgstr ""
+
+#. type: SH
+#: giteveryday.7:884
+#, no-wrap
+msgid "GIT"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:887
+msgid "Part of the B<git>(1) suite"
+msgstr ""
+
+#. type: SH
+#: giteveryday.7:887
+#, no-wrap
+msgid "NOTES"
+msgstr ""
+
+#. type: IP
+#: giteveryday.7:888
+#, no-wrap
+msgid " 1."
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:890
+msgid "update hook howto"
+msgstr ""
+
+#. type: Plain text
+#: giteveryday.7:892
+msgid "\\%file:///usr/share/doc/git/html/howto/update-hook-example.html"
+msgstr ""
